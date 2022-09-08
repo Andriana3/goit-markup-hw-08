@@ -1,0 +1,55 @@
+body {
+    color: $main-color;
+    background-color: $white-color;
+    font-family: $main-font;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        
+    }
+}
+
+.section-total {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.caption {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    color: $title-color;
+    margin-bottom: 50px;
+}
+
+.hide-title {
+    text-align: center;
+}
+
+.imagine {
+    display: block;
+    max-width: 100%;
+}
+

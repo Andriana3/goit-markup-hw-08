@@ -1,0 +1,24 @@
+.address-detail {
+    // display: flex;
+    // flex-direction: column;
+
+    align-items: flex-start;
+    margin-right: 70px;
+    width: 231px;
+}
+
+.address-detail__list {
+    margin-bottom: 9px;
+}
+
+.address-detail__link {
+    color: $link-color;
+    text-decoration: none;
+
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}

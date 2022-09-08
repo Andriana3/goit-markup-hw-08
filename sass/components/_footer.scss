@@ -1,0 +1,43 @@
+// Футер
+
+.page-footer {
+    background-color: $secondary-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+// .page-footer__content {
+//     display: flex;
+// }
+
+.page-footer__address {
+    font-family: $main-font;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $white-color;
+    padding-top: 20px;
+}
+
+
+
+.footer-social-content {
+    margin-top: 12px;
+}
+
+.footer-social-content__title {
+    text-align: left;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    color: $white-color;
+}
+
+
+

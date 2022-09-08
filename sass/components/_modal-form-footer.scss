@@ -1,0 +1,90 @@
+// Форма підписки на розсилку
+
+.form-footer {
+    margin-top: 12px;
+    // margin-left: auto;
+}
+
+.form-footer__title {
+    // text-align: left;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    // margin-bottom: 20px;
+
+    color: $white-color;
+}
+
+.modal-footer {
+    // display: flex;
+}
+
+.modal-footer__email {
+    display: block;
+    background-color: $secondary-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: 12px;
+
+    color: rgba(255, 255, 255, 0.6);
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    @include transition(border-color);
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+        outline: none;
+    }
+}
+
+.modal-footer__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+
+    padding-left: 28px;
+
+    background: $accent-color;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    color: $white-color;
+
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+
+    @include transition(background-color);
+
+    &:hover,
+    &:focus {
+        background-color: $button-color;
+    }
+}
+
+.modal-footer__icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 13px;
+    right: 28px;
+
+    fill: $white-color;
+}
