@@ -1,0 +1,110 @@
+//   Контакти
+
+.contact {
+    display: flex;
+    flex-direction: column-reverse;
+   
+    
+    // align-items: center;
+    
+    margin-left: auto;
+    padding: 0;
+    margin: 0;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+// .contact__item {
+    
+
+.contact__link {
+    // display: flex;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    // align-items: center;
+
+    color: $main-color;
+    text-decoration: none;
+
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+    &--style{
+        font-size: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+        line-height: 1.16;
+    }
+
+    }
+
+.contact__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.social{
+    display: flex;
+    margin-top: 64px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.social__name{
+    margin-right: 10px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.social__link{
+    font-family: $main-font;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+    
+        color: $accent-color;
+
+    &:hover,
+    &:focus{
+        box-shadow: $accent-color;
+    }
+}
+
+.social__link--style{
+
+    &::after {
+        content: '';
+        margin-left: 10px;
+
+        width: 100%;
+        height: 0;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        transform: rotate(90deg);
+        }
+        
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+}
+
+.contact-style{
+    margin-top: 250px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+    }
+}

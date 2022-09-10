@@ -27,8 +27,8 @@
      left: 50%;
      transform: translate(-50%, -50%);
 
-     min-width: 528px;
-     min-height: 581px;
+     width: 450px;
+     height: 609px;
      background-color: $white-color;
 
      transform: translate(-50%, -50%) scale(1);
@@ -44,6 +44,8 @@
      top: 8px;
      right: 8px;
      padding: 6px;
+     margin-left: 8px;
+     margin-top: 8px;
      cursor: pointer;
 
      display: flex;

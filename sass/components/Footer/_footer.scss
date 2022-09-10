@@ -6,11 +6,20 @@
     padding-bottom: 60px;
     display: flex;
     flex-direction: column;
+
 }
 
-// .page-footer__content {
-//     display: flex;
+// .navigation-style{
+//     // margin-left: auto;
+//     // margin-right: auto;
+//     // display: flex;
+//     // flex-direction: column;
+//     // justify-content: center;
+//     // align-items: center;
 // }
+.page-footer__content {
+    margin: 0;
+}
 
 .page-footer__address {
     font-family: $main-font;
@@ -19,12 +28,18 @@
     line-height: 1.7;
     color: $white-color;
     padding-top: 20px;
+    
 }
 
 
 
 .footer-social-content {
-    margin-top: 12px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .footer-social-content__title {

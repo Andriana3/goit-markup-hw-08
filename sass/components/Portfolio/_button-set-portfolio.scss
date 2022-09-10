@@ -2,17 +2,24 @@
 // Кнопки
 .button-set {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin-right: auto;
+    margin-bottom: 40px;
 }
 
 .button-set__list {
-    display: flex;
     margin-right: 8px;
+    margin-bottom: 15px;
 
-    &:last-child {
-        margin-right: 0;
+    &:nth-child(3n){
+        margin-right: 130px;
     }
+
+        &:nth-last-child(-n + 2) {
+            margin-bottom: 0;
+        }
+
 }
 
 .button-set__name {

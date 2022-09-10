@@ -1,10 +1,12 @@
 .address-detail {
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    align-items: flex-start;
-    margin-right: 70px;
-    width: 231px;
+    // align-items: flex-start;
+    // margin-right: 70px;
+    // width: 231px;
 }
 
 .address-detail__list {

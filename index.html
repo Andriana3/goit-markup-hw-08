@@ -33,7 +33,7 @@
           </div>
         </button>
         <div class="menu-container js-menu-container" id="mobile-menu">
-          <button type="button" class="menu-toggle js-close-menu">
+          <button type="button" class="menu-toggle menu-toggle--closed js-close-menu">
             <svg width="40" height="40">
               <use class="icon-cross" href="./images/burgermenu.svg#icon-close_40px-3"></use>
             </svg>
@@ -46,8 +46,9 @@
           </li class="menu-nav__item">
           <li class="menu-nav__item"><a href="" class="menu-nav__list">Контакти</a></li>
         </ul>
+        <div class="contact-style">
         <ul class="contact">
-          <li class="contact__item"><a class="contact__link" href="mailto:info@devstudio.com">
+          <li class="contact__item "><a class="contact__link contact__link--style" href="mailto:info@devstudio.com">
             <svg class="contact__icon" width="16" height="12" >
               <use href="./images/icons.svg#icon-envelope" ></use></svg>
             info@devstudio.com </a></li>
@@ -57,6 +58,13 @@
           </svg>
             +38 096 111 11 11</a></li>
         </ul>
+        <ul class="social">
+          <li class="social__name"><a class="social__link social__link--style" href="">Instagram</a></li>
+          <li class="social__name"><a class="social__link social__link--style" href="">Twitter</a></li>
+          <li class="social__name"><a class="social__link social__link--style" href="">Facebook</a></li>
+          <li class="social__name"><a class="social__link " href="">LinkedIn</a></li>
+        </ul>
+        </div>
         </div>
         </div>
         </div>
@@ -164,7 +172,21 @@
         <h2 class="caption">Наша команда</h2>
         <ul class="team__list">
           <li class="team__item">
-            <img class="imagine" src="./images/image4.jpg" alt="продукт дизайнер" width="270" />
+            <picture>
+              <source
+              srcset="./images/mobile/img.jpg 1x, ./images/mobile/img@2x.jpg 2x"
+              media="(max-width: 767px)"
+              />
+
+              <img 
+              src="./images/mobile/img.jpg"
+              alt="фотографія дизайнера"
+              width="450"
+              height="460" />
+
+            </picture>
+
+            <!-- <img class="imagine" src="./images/image4.jpg" alt="продукт дизайнер" width="270" /> -->
             <div class="team__container">
             <h3 class="team__title">Ігор Дем'яненко</h3>
             <p lang="en" class="team__text">Product Designer</p>
@@ -185,11 +207,17 @@
           </div>
           </li>
           <li class="team__item">
-            <img class="imagine"
+            <picture>
+              <source srcset="./images/mobile/img2.jpg 1x, ./images/mobile/img2@2x.jpg 2x" media="(max-width: 767px)" />
+            
+              <img src="./images/mobile/img2.jpg" alt="фотографія фронтенд розробника" width="450" height="460" />
+            
+            </picture>
+            <!-- <img class="imagine"
               src="./images/image5.jpg"
               alt="фронтенд розробник"
               width="270"
-            />
+            /> -->
             <div class="team__container">
             <h3 class="team__title">Ольга Рєпіна</h3>
             <p lang="en" class="team__text">Frontent Developer</p>
@@ -210,7 +238,13 @@
           </div>
           </li>
           <li class="team__item">
-            <img class="imagine" src="./images/image6.jpg" alt="маркетолог" width="270" />
+            <picture>
+            <source srcset="./images/mobile/img3.jpg 1x, ./images/mobile/img3@2x.jpg 2x" media="(max-width: 767px)" />
+            
+            <img src="./images/mobile/img3.jpg" alt="фотографія працівника маркетингу" width="450" height="460" />
+            
+            </picture>
+            <!-- <img class="imagine" src="./images/image6.jpg" alt="маркетолог" width="270" /> -->
             <div class="team__container">
             <h3 class="team__title">Микола Тарасов</h3>
             <p lang="en" class="team__text">Marketing</p>
@@ -231,7 +265,13 @@
           </div>
           </li>
           <li class="team__item">
-            <img class="imagine" src="./images/image7.jpg" alt="дизайнер" width="270" />
+            <picture>
+              <source srcset="./images/mobile/img4.jpg 1x, ./images/mobile/img4@2x.jpg 2x" media="(max-width:767px)" />
+            
+              <img src="./images/mobile/img4.jpg" alt="фотографія IU дизайнера" width="450" height="460" />
+            
+            </picture>
+            <!-- <img class="imagine" src="./images/image7.jpg" alt="дизайнер" width="270" /> -->
             <div class="team__container">
             <h3 class="team__title">Михайло Єрмаков</h3>
             <p lang="en" class="team__text">UI Designer</p>
@@ -298,7 +338,7 @@
     <!-- футер -->
     <footer class="page-footer">
        <div class="container page-footer__content">
-      <div>
+      <div class="navigation-style">
       <a class="navigation__logo navigation__logo--end" href="/index.html" 
         > Web<span class=" navigation__accent navigation__accent--end">Studio</span></a
       >
@@ -315,7 +355,7 @@
         </address>
         </div>
 <div class="footer-social-content">
-        <h3 class="footer-social-content__title">приєднуйтесь</h3>
+        <p class="footer-social-content__title">Приєднуйтесь</p>
         <ul class="network-list">
             <li><a class="network-list__link" href="#"><svg width="20" height="20">
               <use  href="./images/icons.svg#icon-instagram-2"></use>
@@ -333,7 +373,7 @@
       </div>
 <!-- форма підписки на розсилку -->
       <div class="form-footer">
-        <h3 class="form-footer__title">Підпишіться на розсилку</h3>
+        <p class="form-footer__title">Підпишіться на розсилку</p>
         <form class="modal-footer">
           <label >
             <input class="modal-footer__email" type="email" name="email" placeholder="E-mail" />

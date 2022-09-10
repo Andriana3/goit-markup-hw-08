@@ -1,0 +1,62 @@
+// Секція Особливості
+
+
+.feature-set {
+   
+    align-items: flex-start;
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: -30px;
+    }
+    
+}
+
+.feature-set__item {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+            margin-right: 30px;
+    }
+
+    @media screen and(min-width: 1200px){
+        
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    }
+}
+
+.feature-set__item:last-child{
+    @media screen and(max-width: 768px) {
+        margin-bottom: 0;
+            margin-right: 0;
+        
+    }
+}
+
+ .feature-set__item:nth-child(2n) {
+    @media screen and (min-width: 768px){
+    margin-right: 0;
+    }
+     
+ }
+    
+
+.feature-set__content {
+    background: $primary-color;
+
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.feature-set__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    color: $title-color;
+}

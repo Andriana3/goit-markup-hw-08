@@ -4,24 +4,24 @@
    @import './base/common';
    @import './utils.scss/mixin';
    @import './utils.scss/visually-hidden';
-   @import './components/page-header';
+   @import './components/Header/page-header';
    @import './components/logo';
-   @import './components/menu-nav';
-   @import './components/contacts';
-   @import './components/section_hero';
-   @import './components/modal';
-   @import './components/form';
-   @import './components/section-feature';
-   @import './components/section-activity';
-   @import './components/section-team';
-   @import './components/social-media';
-   @import './components/clients-set';
-   @import './components/button-set-portfolio';
-   @import './components/cards-portfolio';
-   @import './components/footer';
-   @import './components/address-detail-footer';
-   @import './components/network-list-footer';
-   @import './components/modal-form-footer';
+   @import './components/Header/menu-nav';
+   @import './components/Header/contacts';
+   @import './components/Hero/section_hero';
+   @import './components/Modal/modal';
+   @import './components/Modal/form';
+   @import './components/Feature/section-feature';
+   @import './components/Activity/section-activity';
+   @import './components/Team/section-team';
+   @import './components/Team/social-media';
+   @import './components/Clients/clients-set';
+   @import './components/Portfolio/button-set-portfolio';
+   @import './components/Portfolio/cards-portfolio';
+   @import './components/Footer/footer';
+   @import './components/Footer/address-detail-footer';
+   @import './components/Footer/network-list-footer';
+   @import './components/Footer/modal-form-footer';
 
 
 

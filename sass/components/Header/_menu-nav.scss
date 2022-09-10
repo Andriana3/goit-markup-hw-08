@@ -1,0 +1,170 @@
+//   Навігація меню
+
+.menu-container{
+
+    @media screen and (max-width: 767px) {
+        
+    position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 48px 40px;
+        background-color: $white-color;
+        z-index: 999;
+
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out;
+    }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            height: 80px;
+
+        }
+
+
+}
+
+.menu-container.is-open{
+    transform: translateX(0);
+
+}
+
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+    background-color: $white-color;
+    border: none;
+
+    fill: $title-color; 
+    @include transition(fill);
+    
+        &:hover,
+        &:focus {
+            fill: $accent-color;
+        }
+
+    &--closed{
+        top: 10px;
+        right: 15px;
+        
+    }
+
+     @media screen and (min-width: 768px) {
+        display: none;
+         }
+}
+
+.menu-container .menu-toggle{
+    position: absolute;
+
+    @media screen and (min-width: 768px) {
+            display: none;
+        }
+}
+
+.mobile-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile-menu{
+    font-family: $main-font;
+    font-weight: 500;
+    height: 100vw;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+
+    @media screen and (min-width: 768px) {
+            display: flex;
+            height: 80px;
+    
+}
+}
+
+.menu-nav {
+    display: block;
+    padding: 0;
+
+@media screen and (min-width: 768px) {
+    display: flex;
+}
+}
+
+.menu-nav__item{
+    margin-bottom: 32px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    @media screen and (min-width: 768px) {
+        margin-right: 50px;
+        margin-bottom: 0;
+}
+}
+
+.menu-nav__list {
+    color: $title-color;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    margin-bottom: auto;
+
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
+}
+
+.menu-nav__list--active {
+    position: relative;
+    color: $accent-color;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.14;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.14;
+}
+}
+
+   
+
+
+.menu-nav__list--active::after {
+    @media screen and (min-width: 768px) {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin-top: 28px;
+
+    background: $accent-color;
+    border-radius: 2px;
+    }
+}

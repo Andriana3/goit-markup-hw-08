@@ -22,27 +22,52 @@
       <header class="header-page">
         <div class="container header-page__content">
           <nav class="navigation">
-            <a href="/index.html" class="navigation__logo"> Web <span class="navigation__accent">Studio</span></a>
-            <ul class="menu-nav">
-              <li class="menu-nav__item"><a href="./index.html" class="menu-nav__list">Студія</a></li>
-              <li class="menu-nav__item">
-                <a href="./portfolia.html" class="menu-nav__list menu-nav__list menu-nav__list--active">Портфоліо</a>
-              </li class="menu-nav__item">
-              <li class="menu-nav__item"><a href="" class="menu-nav__list">Контакти</a></li>
-            </ul>
-          </nav>
-          <ul class="contact">
-            <li class="contact__item"><a class="contact__link" href="mailto:info@devstudio.com">
-                <svg class="contact__icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope"></use>
+            <div class="mobile-header">
+              <a href="/index.html" class="navigation__logo"> Web <span class="navigation__accent">Studio</span></a>
+              <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="40" height="40" aria-label="Переключатель меню">
+                  <use class="icon-menu" href="./images/burgermenu.svg#icon-menu_40px-2"></use>
                 </svg>
-                info@devstudio.com </a></li>
-            <li class="contact__item"><a class="contact__link" href="tel:+380961111111">
-                <svg class="contact__icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
+            </div>
+            </button>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+              <button type="button" class="menu-toggle menu-toggle--closed js-close-menu">
+                <svg width="40" height="40">
+                  <use class="icon-cross" href="./images/burgermenu.svg#icon-close_40px-3"></use>
                 </svg>
-                +38 096 111 11 11</a></li>
-          </ul>
+              </button>
+              <div class="mobile-menu">
+                <ul class="menu-nav">
+                  <li class="menu-nav__item"><a href="" class="menu-nav__list">Студія</a></li>
+                  <li class="menu-nav__item">
+                    <a href="./portfolia.html" class="menu-nav__list menu-nav__list--active">Портфоліо</a>
+                  </li class="menu-nav__item">
+                  <li class="menu-nav__item"><a href="" class="menu-nav__list">Контакти</a></li>
+                </ul>
+                <div class="contact-style">
+                  <ul class="contact">
+                    <li class="contact__item "><a class="contact__link contact__link--style" href="mailto:info@devstudio.com">
+                        <svg class="contact__icon" width="16" height="12">
+                          <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com </a></li>
+                    <li class="contact__item"><a class="contact__link" href="tel:+380961111111">
+                        <svg class="contact__icon" width="10" height="16">
+                          <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a></li>
+                  </ul>
+                  <ul class="social">
+                    <li class="social__name"><a class="social__link social__link--style" href="">Instagram</a></li>
+                    <li class="social__name"><a class="social__link social__link--style" href="">Twitter</a></li>
+                    <li class="social__name"><a class="social__link social__link--style" href="">Facebook</a></li>
+                    <li class="social__name"><a class="social__link " href="">LinkedIn</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+        </nav>
         </div>
       </header>
       <main>
@@ -65,11 +90,17 @@
           <li class="cards__list">
             <a class="cards__link" href="">
               <div class="cards__thumb">
-            <img class="imagine"
+                <picture>
+                  <source srcset="./images/mobile/card1.jpg 1x, ./images/mobile/card1@2x.jpg 2x" media="(max-width: 767px)" />
+                
+                  <img src="./images/mobile/card1.jpg" alt="портфоліо" width="450" height="294" />
+                
+                </picture>
+            <!-- <img class="imagine"
               src="./images/portfolio1.jpg"
               alt="портфоліо на комютері"
               width="370"
-            />
+            /> -->
               <p class="cards__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
             <div class="cards__box">
@@ -81,11 +112,17 @@
           <li class="cards__list">
             <a class="cards__link" href="">
               <div class="cards__thumb">
-            <img class="imagine"
+                <picture>
+                  <source srcset="./images/mobile/card2.jpg 1x, ./images/mobile/card2@2x.jpg 2x" media="(max-width: 767px)" />
+                
+                  <img src="./images/mobile/card2.jpg" alt="портфоліо" width="450" height="294" />
+                
+                </picture>
+            <!-- <img class="imagine"
               src="./images/portfolio2.jpg"
               alt="два гравці грають в баскетбол"
               width="370"
-            />
+            /> -->
               <p class="cards__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             <div class="cards__box">
@@ -97,11 +134,17 @@
           <li class="cards__list">
             <a class="cards__link" href="">
               <div class="cards__thumb">
-            <img class="imagine"
+                <picture>
+                  <source srcset="./images/mobile/card3.jpg 1x, ./images/mobile/card3@2x.jpg 2x" media="(max-width: 767px)" />
+                
+                  <img src="./images/mobile/card3.jpg" alt="портфоліо" width="450" height="294" />
+                
+                </picture>
+            <!-- <img class="imagine"
               src="./images/portfolio3.jpg"
               alt="лого ресторану Seafood"
               width="370"
-            />
+            /> -->
               <p class="cards__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             <div class="cards__box">
@@ -113,11 +156,17 @@
           <li class="cards__list">
             <a class="cards__link" href="">
               <div class="cards__thumb">
-            <img class="imagine"
+                <picture>
+                  <source srcset="./images/mobile/card4.jpg 1x, ./images/mobile/card4@2x.jpg 2x" media="(max-width: 767px)" />
+                
+                  <img src="./images/mobile/card4.jpg" alt="портфоліо" width="450" height="294" />
+                
+                </picture>
+            <!-- <img class="imagine"
               src="./images/portfolio4.jpg"
               alt="навушники бездротові"
               width="370"
-            />
+            /> -->
               <p class="cards__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             <div class="cards__box">
@@ -129,11 +178,17 @@
           <li class="cards__list">
             <a class="cards__link" href="">
               <div class="cards__thumb">
-            <img class="imagine"
+                <picture>
+                  <source srcset="./images/mobile/card5.jpg 1x, ./images/mobile/card5@2x.jpg 2x" media="(max-width: 767px)" />
+                
+                  <img src="./images/mobile/card5.jpg" alt="портфоліо" width="450" height="294" />
+                
+                </picture>
+            <!-- <img class="imagine"
               src="./images/portfolio5.jpg"
               alt="дві коробки, білого і рожевого кольору"
               width="370"
-            />
+            /> -->
               <p class="cards__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             <div class="cards__box">
@@ -145,11 +200,17 @@
           <li class="cards__list">
             <a class="cards__link" href="">
               <div class="cards__thumb">
-            <img class="imagine"
+                <picture>
+                  <source srcset="./images/mobile/card6.jpg 1x, ./images/mobile/card6@2x.jpg 2x" media="(max-width: 767px)" />
+                
+                  <img src="./images/mobile/card6.jpg" alt="портфоліо" width="450" height="294" />
+                
+                </picture>
+            <!-- <img class="imagine"
               src="./images/portfolio6.jpg"
               alt="монітор компютера"
               width="370"
-            />
+            /> -->
               <p class="cards__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             <div class="cards__box">
@@ -161,11 +222,17 @@
           <li class="cards__list">
             <a class="cards__link" href="">
               <div class="cards__thumb">
-            <img class="imagine"
+                <picture>
+                  <source srcset="./images/mobile/card7.jpg 1x, ./images/mobile/card7@2x.jpg 2x" media="(max-width: 767px)" />
+                
+                  <img src="./images/mobile/card7.jpg" alt="портфоліо" width="450" height="294" />
+                
+                </picture>
+            <!-- <img class="imagine"
               src="./images/portfolio7.jpg"
               alt="видання журналу Limited Edition"
               width="370"
-            />
+            /> -->
               <p class="cards__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             <div class="cards__box">
@@ -177,11 +244,17 @@
           <li class="cards__list">
             <a class="cards__link" href="">
               <div class="cards__thumb">
-            <img class="imagine"
+                <picture>
+                  <source srcset="./images/mobile/card8.jpg 1x, ./images/mobile/card8@2x.jpg 2x" media="(max-width: 767px)" />
+                
+                  <img src="./images/mobile/card8.jpg" alt="портфоліо" width="450" height="294" />
+                
+                </picture>
+            <!-- <img class="imagine"
               src="./images/portfolio8.jpg"
               alt="біла етикетка"
               width="370"
-            />
+            /> -->
               <p class="cards__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             <div class="cards__box">
@@ -193,11 +266,17 @@
           <li class="cards__list">
             <a class="cards__link" href="">
               <div class="cards__thumb">
-            <img class="imagine"
+                <picture>
+                  <source srcset="./images/mobile/card9.jpg 1x, ./images/mobile/card9@2x.jpg 2x" media="(max-width: 767px)" />
+                
+                  <img src="./images/mobile/card9.jpg" alt="портфоліо" width="450" height="294" />
+                
+                </picture>
+            <!-- <img class="imagine"
               src="./images/portfolio9.jpg"
               alt="створення бізнес плану на ноутбуці"
               width="370"
-            />
+            /> -->
               <p class="cards__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             <div class="cards__box">
@@ -213,7 +292,7 @@
     <!-- футер -->
     <footer class="page-footer">
       <div class="container page-footer__content">
-        <div>
+        <div class="navigation-style">
           <a class="navigation__logo navigation__logo--end" href="/index.html"> Web<span
               class=" navigation__accent navigation__accent--end">Studio</span></a>
           <address class="page-footer__address">
@@ -229,7 +308,7 @@
           </address>
         </div>
         <div class="footer-social-content">
-          <h3 class="footer-social-content__title">приєднуйтесь</h3>
+          <p class="footer-social-content__title">Приєднуйтесь</p>
           <ul class="network-list">
             <li><a class="network-list__link" href="#"><svg width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
@@ -247,7 +326,7 @@
         </div>
         <!-- форма підписки на розсилку -->
         <div class="form-footer">
-          <h3 class="form-footer__title">Підпишіться на розсилку</h3>
+          <p class="form-footer__title">Підпишіться на розсилку</p>
           <form class="modal-footer">
             <label>
               <input class="modal-footer__email" type="email" name="email" placeholder="E-mail" />
