@@ -37,7 +37,7 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    width: 358px;
+    width: 90%;
     height: 50px;
     padding-left: 16px;
     padding-right: 16px;
@@ -56,18 +56,25 @@
         border-color: $accent-color;
         outline: none;
     }
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+    
 }
 
 .modal-footer__button {
-    position: relative;
+    // position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
+        
 
     letter-spacing: 0.06em;
     width: 200px;
     height: 50px;
 
-    padding-left: 31px;
+    // padding-left: 31px;
 
     background: $accent-color;
     border: none;
@@ -87,14 +94,16 @@
     &:focus {
         background-color: $button-color;
     }
+
 }
 
 .modal-footer__icon {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    top: 13px;
-    right: 28px;
+    // position: absolute;
+    margin-left: 12px;
+    // display: flex;
+    // align-items: center;
+    // top: 13px;
+    // right: 28px;
 
     fill: $white-color;
 }

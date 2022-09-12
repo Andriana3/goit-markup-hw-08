@@ -4,7 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content:flex-start;
-    margin-right: auto;
+    // margin-right: auto;
     margin-bottom: 40px;
 }
 
@@ -12,9 +12,6 @@
     margin-right: 8px;
     margin-bottom: 15px;
 
-    &:nth-child(3n){
-        margin-right: 130px;
-    }
 
         &:nth-last-child(-n + 2) {
             margin-bottom: 0;
