@@ -138,9 +138,10 @@
 .modal-form__checkbox-label {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 12px;
-    margin-left: 40px;
-    margin-right: 40px;
+    // margin-left: 40px;
+    // margin-right: 40px;
     margin-bottom: 30px;
 }
 
@@ -158,6 +159,8 @@
 }
 
 .modal-form__button {
+    display: block;
+    margin: auto;
     font-family: $main-font;
     font-weight: 700;
     font-size: 16px;
@@ -172,8 +175,7 @@
     border-radius: 4px;
     width: 200px;
     padding: 10px 52px;
-    margin-left: 125px;
-    margin-right: 125px;
+    
     margin-bottom: 40px;
     border: none;
     cursor: pointer;

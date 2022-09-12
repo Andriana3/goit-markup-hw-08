@@ -6,6 +6,11 @@
     justify-content:flex-start;
     // margin-right: auto;
     margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 14px;
+    }
 }
 
 .button-set__list {
@@ -16,8 +21,12 @@
         &:nth-last-child(-n + 2) {
             margin-bottom: 0;
         }
-
+        
+    @media screen and (min-width: 768px) {    
+     margin-bottom: 0;
+                 }
 }
+
 
 .button-set__name {
     font-family: $main-font;
