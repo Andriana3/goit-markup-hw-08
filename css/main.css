@@ -124,6 +124,7 @@ img {
   line-height: 1.16;
   text-decoration: none;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .navigation__logo--end {
   padding: 0;
@@ -1177,7 +1178,7 @@ img {
 }
 
 .page-footer__content {
-  margin: 0;
+  margin: auto;
 }
 
 .page-footer__address {
