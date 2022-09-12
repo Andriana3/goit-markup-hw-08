@@ -32,6 +32,10 @@
 
      transform: translate(-50%, -50%) scale(1);
      z-index: 10;
+
+     @media  screen and (min-width: 768px) {
+        width: 450px;
+     }
  }
 
  .modal-button {

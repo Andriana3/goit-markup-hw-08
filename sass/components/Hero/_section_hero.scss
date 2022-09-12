@@ -29,6 +29,19 @@
                     }
                 }
             }
+
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient($gradient-color, $gradient-color), url(../images/laptop/headerlaptop.jpg);
+        
+        @media (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                .section-hero {
+                    background-image: linear-gradient($gradient-color, $gradient-color),
+                        url(../images/laptop/headerlaptop@2x.jpg);
+                }
+            }
+    }
         
 }
 

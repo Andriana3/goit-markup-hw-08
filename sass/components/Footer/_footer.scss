@@ -12,16 +12,14 @@
 .navigation-style{
     text-align: center;
 
+    @media screen and (min-width: 1200px) {
+
+        text-align: left;
+        margin-right: 70px;
+    }
+
 }
 
-// .navigation-style{
-//     // margin-left: auto;
-//     // margin-right: auto;
-//     // display: flex;
-//     // flex-direction: column;
-//     // justify-content: center;
-//     // align-items: center;
-// }
 .page-footer__content {
     margin: auto;
     @media screen and (min-width: 768px) {
@@ -54,6 +52,11 @@
 
     @media screen and (min-width: 768px){
         margin-top: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        align-items: flex-start;
+        margin-right: auto;
     }
 
 }
