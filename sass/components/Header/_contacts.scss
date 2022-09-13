@@ -28,7 +28,8 @@
     }
 
         @media screen and (min-width: 1200px) {
-            margin-left: 10px;
+            margin-left: 30px;
+            margin-bottom: 0;
         }
 }
 
@@ -75,6 +76,7 @@
 .social{
     display: flex;
     margin-top: 64px;
+    flex-wrap: wrap;
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -122,9 +124,6 @@
 }
 
 .contact-style{
-    // @media screen and (max-width: 767px){
-    // margin-top: 250px;
-    // }
     @media screen and (min-width: 768px) {
         margin: 0;
         
@@ -133,7 +132,3 @@
 
 
 
-//     // @media screen and (min-width: 768px) {
-//     //     margin-top: 0;
-//     // }
-// }

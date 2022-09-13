@@ -124,6 +124,7 @@
     border: 2px solid $title-color;
     border-radius: 2px;
     fill: $white-color;
+    flex-shrink: 0;
 }
 
 .modal-form__checkbox:checked+.modal-form__icon-checked {
@@ -176,7 +177,6 @@
     width: 200px;
     padding: 10px 52px;
     
-    margin-bottom: 40px;
     border: none;
     cursor: pointer;
 
